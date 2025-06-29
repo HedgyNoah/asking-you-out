@@ -1,0 +1,99 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Chewy", system-ui;
+  letter-spacing: 0.1rem;
+  cursor: url("../assets/icons8-ice-pop-pink-32.png"), auto;
+  background-color: #ffc1da;
+  font-size: 25px;
+}
+
+h1 {
+  color: #f96aa1;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  color: #f96aa1;
+  font-weight: bold;
+}
+
+input[type="time"] {
+  cursor: url("../assets/icons8-ice-pop-pink-32.png"), auto;
+  padding: 0.5rem;
+  border: 2px solid #f96aa1;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+input[type="time"]:focus {
+  outline: none;
+  border-color: #f96aa1;
+  box-shadow: 0 0 5px rgba(249, 106, 161, 0.5);
+}
+
+input[type="time"]::placeholder {
+  color: #f96aa1;
+  opacity: 0.7;
+}
+
+input[type="time"]:required:invalid {
+  border-color: #f96aa1;
+}
+
+input[type="time"]:required:valid {
+  border-color: #8accd5;
+}
+
+form button {
+  font-size: 25px;
+  cursor: url("../assets/icons8-ice-pop-pink-32.png"), auto;
+  font-family: "Chewy", system-ui;
+  letter-spacing: 0.1rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: #f8f8e1;
+  background-color: #8accd5;
+  transition: all 0.2s ease-in-out;
+}
+
+form button:hover {
+  scale: 1.1;
+}
+
+form button:active {
+  scale: 0.95;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.emotion-gif {
+  width: 200px;
+  pointer-events: none;
+}

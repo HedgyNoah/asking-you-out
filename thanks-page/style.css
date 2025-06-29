@@ -3,61 +3,39 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2rem;
   min-height: 100vh;
+  gap: 0.5rem;
   font-family: "Chewy", system-ui;
   letter-spacing: 0.1rem;
-  cursor: url("./assets/icons8-ice-pop-pink-32.png"), auto;
+  cursor: url("../assets/icons8-ice-pop-pink-32.png"), auto;
+  position: relative;
   background-color: #ffc1da;
-  font-size: 22px;
+  font-size: 30px;
 }
 
-h1 {
-  width: 80%;
-  margin: 0;
-  color: #f96aa1;
+.reaction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
   text-align: center;
 }
 
-.buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+.blush {
+  margin: 0;
+  color: #f96aa1;
+  font-size: 40px;
+  text-align: center;
+  animation: blushy 1s ease-in-out infinite alternate;
 }
 
-.buttons button {
-  font-size: 25px;
-  cursor: url("/assets/icons8-ice-pop-pink-32.png"), auto;
-  font-family: "Chewy", system-ui;
-  letter-spacing: 0.1rem;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 0.5rem;
-  color: #f8f8e1;
-  background-color: #8accd5;
-  box-shadow: 0 0 5px -1px #000;
-  transition: all 0.2s ease-in-out;
-}
-
-.buttons button:hover {
-  scale: 1.1;
-}
-
-.buttons button:active {
-  scale: 0.95;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
+@keyframes blushy {
+  from {
+    filter: hue-rotate(0deg);
   }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+  to {
+    filter: hue-rotate(15deg) brightness(1.1);
   }
 }
 
@@ -73,7 +51,7 @@ h1 {
 }
 
 .balloon {
-  cursor: url("/assets/icons8-ice-pop-pink-32.png"), auto;
+  cursor: url("../assets/icons8-ice-pop-pink-32.png"), auto;
   position: absolute;
   bottom: -50px;
   background: #ffb6c1;

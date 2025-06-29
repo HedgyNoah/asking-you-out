@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -8,19 +10,22 @@
       rel="stylesheet"
     />
     <title>Pick the time</title>
-    <link rel="stylesheet" href="../style.css" />
-    <script defer src="../script.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
   </head>
   <body>
-    <h1>Please pick a time</h1>
-    <form
-      action="https://formsubmit.co/77549d382fa20746e3f02e727725aadf"
-      method="POST"
-    >
+    <img
+      id="emotion-gif"
+      src="../assets/clap.gif"
+      alt="emotion"
+      class="emotion-gif"
+    />
+    <h1 id="typewriter"></h1>
+    <form id="loveForm">
       <div class="form-group">
-        <label for="start">When will you be free</label>
+        <label for="start">I'll get to see you at...</label>
         <input type="time" name="start" required />
-        <label for="end">until</label>
+        <label for="end">then you'll leave me at 🥺</label>
         <input id="end" type="time" name="end" required />
       </div>
       <button type="submit">Thank you for your time hehehe</button>

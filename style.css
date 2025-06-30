@@ -15,7 +15,7 @@ body {
   min-height: 100vh;
   font-family: "Chewy", system-ui;
   letter-spacing: 0.1rem;
-  cursor: url("./assets/icons8-ice-pop-pink-32.png"), auto;
+  cursor: url("asking-you-out/assets/icons8-ice-pop-pink-32.png"), auto;
   background-color: #ffc1da;
   font-size: 22px;
 }
@@ -37,7 +37,7 @@ h1 {
 
 .buttons button {
   font-size: 25px;
-  cursor: url("./assets/icons8-ice-pop-pink-32.png"), auto;
+  cursor: url("asking-you-out/assets/icons8-ice-pop-pink-32.png"), auto;
   font-family: "Chewy", system-ui;
   letter-spacing: 0.1rem;
   padding: 1rem 2rem;
@@ -81,7 +81,7 @@ h1 {
 }
 
 .balloon {
-  cursor: url("./assets/icons8-ice-pop-pink-32.png"), auto;
+  cursor: url("asking-you-out/assets/icons8-ice-pop-pink-32.png"), auto;
   position: absolute;
   bottom: -50px;
   background: #ffb6c1;

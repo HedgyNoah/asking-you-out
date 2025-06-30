@@ -1,3 +1,11 @@
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -29,7 +37,7 @@ h1 {
 
 .buttons button {
   font-size: 25px;
-  cursor: url("/assets/icons8-ice-pop-pink-32.png"), auto;
+  cursor: url("./assets/icons8-ice-pop-pink-32.png"), auto;
   font-family: "Chewy", system-ui;
   letter-spacing: 0.1rem;
   padding: 1rem 2rem;
@@ -73,7 +81,7 @@ h1 {
 }
 
 .balloon {
-  cursor: url("/assets/icons8-ice-pop-pink-32.png"), auto;
+  cursor: url("./assets/icons8-ice-pop-pink-32.png"), auto;
   position: absolute;
   bottom: -50px;
   background: #ffb6c1;

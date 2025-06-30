@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let yesScale = 1;
   let noScale = 1;
   const maxScale = 3;
-  const minScale = 0.1;
+  const minScale = 0;
 
   noButton.addEventListener("mouseenter", () => {
     moveButtonRandomly(noButton);

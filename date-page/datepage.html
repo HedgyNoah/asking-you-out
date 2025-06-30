@@ -21,13 +21,32 @@
       class="emotion-gif"
     />
     <h1 id="typewriter"></h1>
-    <form id="loveForm">
-      <div class="form-group">
+
+    <form
+      id="loveForm"
+      action="https://formsubmit.co/77549d382fa20746e3f02e727725aadf"
+      method="POST"
+    >
+      <div class="custom-time-picker">
         <label for="start">I'll get to see you at...</label>
-        <input type="time" name="start" required />
-        <label for="end">then you'll leave me at 🥺</label>
-        <input id="end" type="time" name="end" required />
+        <div class="scroll-container">
+          <select class="hour-select" name="start-hour"></select>
+          :
+          <select class="minute-select" name="start-minute"></select>
+        </div>
+        <input type="hidden" name="start" id="start-hidden" />
       </div>
+
+      <div class="custom-time-picker">
+        <label for="end">Then you'll leave me at 🥺</label>
+        <div class="scroll-container">
+          <select class="hour-select end-hour" name="end-hour"></select>
+          :
+          <select class="minute-select end-minute" name="end-minute"></select>
+        </div>
+        <input type="hidden" name="end" id="end-hidden" />
+      </div>
+
       <button type="submit">Thank you for your time hehehe</button>
     </form>
   </body>

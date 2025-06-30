@@ -93,11 +93,13 @@ setInterval(() => {
 }, 2000);
 
 const gif = document.getElementById("emotion-gif");
+const yesBtn = document.querySelectorAll("button")[0];
+const noBtn = document.querySelectorAll("button")[1];
 
 let currentGif = "default";
 let gifResetTimeout = null;
 
-noButton.addEventListener("mouseenter", () => {
+noBtn.addEventListener("mouseenter", () => {
   if (currentGif !== "crying") {
     gif.src = "./assets/crying.gif";
     currentGif = "crying";
@@ -114,9 +116,10 @@ noButton.addEventListener("mouseenter", () => {
   }, 6000);
 });
 
-yesButton.addEventListener("mousedown", () => {
+yesBtn.addEventListener("mousedown", () => {
   gif.src = "./assets/happy.gif";
   currentGif = "happy";
+
   if (gifResetTimeout) {
     clearTimeout(gifResetTimeout);
     gifResetTimeout = null;

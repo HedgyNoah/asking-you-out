@@ -15,7 +15,7 @@ body {
   min-height: 100vh;
   font-family: "Chewy", system-ui;
   letter-spacing: 0.1rem;
-  cursor: url("/asking-you-out/assets/icons8-ice-pop-pink-32.png"), auto;
+  cursor: url("./assets/icons8-ice-pop-pink-32.png"), auto;
   background-color: #ffc1da;
   font-size: 22px;
 }
